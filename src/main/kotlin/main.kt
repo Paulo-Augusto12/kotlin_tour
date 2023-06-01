@@ -1,4 +1,4 @@
-
+import classes.exercise_one.Employee
 import functions.exercise_two.circleAreaSingleExpression
 
 import functions.exercise_one.circleArea
@@ -7,11 +7,17 @@ import functions.exercise_three.intervalInSeconds
 
 import lambda.exercise_one.urlsList
 
-fun main () {
+import lambda.exercise_two.repeatN
+
+import classes.exercise_one.giveEmployeeASalaryBoost
+
+fun main() {
 
     val printDivider = " ------------------ [  ] ------------------ "
 
     fun divider() {
+        println(printDivider)
+
         println(printDivider)
     }
 
@@ -23,8 +29,8 @@ fun main () {
 
     val lambdaExerciseOne = urlsList()
 
-    divider()
 
+    divider()
     println("Functions Exercise 1  -> $functionsExerciseOne")
 
     divider()
@@ -40,4 +46,10 @@ fun main () {
     println("Lambda exercise 1 -> $lambdaExerciseOne")
 
     divider()
+
+    println("Lambda Exercise 2 -> ${repeatN(5) { println("Hello :)") }}")
+
+    divider()
+
+    println("Classes Exercise 1 -> ${giveEmployeeASalaryBoost(Employee("Paulo", 10), 50)}")
 }
