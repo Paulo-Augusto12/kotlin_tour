@@ -1,3 +1,5 @@
+package functions.exercise_one
+
 import kotlin.math.PI
 
 fun circleArea(radius: Int): Double {
@@ -5,6 +7,7 @@ fun circleArea(radius: Int): Double {
     return PI * radius * radius
 
 }
-fun main() {
-    println(circleArea(5))
-}
+
+//fun main() {
+//    println(circleArea(5))
+//}
