@@ -1,4 +1,4 @@
-import classes.exercise_one.Employee
+import classes.Employee
 import functions.exercise_two.circleAreaSingleExpression
 
 import functions.exercise_one.circleArea
@@ -10,6 +10,8 @@ import lambda.exercise_one.urlsList
 import lambda.exercise_two.repeatN
 
 import classes.exercise_one.giveEmployeeASalaryBoost
+
+import classes.exercise_two.employeeGenerator
 
 fun main() {
 
@@ -52,4 +54,8 @@ fun main() {
     divider()
 
     println("Classes Exercise 1 -> ${giveEmployeeASalaryBoost(Employee("Paulo", 10), 50)}")
+
+    divider()
+
+    println("Classes Exercise 2 -> ${employeeGenerator()}")
 }

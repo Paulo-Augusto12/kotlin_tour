@@ -6,19 +6,20 @@ import classes.Employee
 
 
 class RandomEmployeeGenerator(var minSalary: Int, var maxSalary: Int) {
-    private val names: List<String> = listOf<String>("Alex", "Paulo", "Thiago", "Fernando", "Matheus")
 
-    fun generateEmployee() {
-        Employee(names.random(), Random.nextInt(from = minSalary, until = maxSalary))
+    val names = listOf("John", "Mary", "Ann", "Paul", "Jack", "Elizabeth")
+    fun generateEmployee(): Employee {
+        return Employee(names.random(), Random.nextInt(from = minSalary, until = maxSalary))
+
     }
 }
 
-fun employeeGenerator() {
+fun employeeGenerator(): Employee {
     val empGen = RandomEmployeeGenerator(10, 30)
-    println(empGen.generateEmployee())
-    println(empGen.generateEmployee())
-    println(empGen.generateEmployee())
+
+    val x = empGen.generateEmployee()
     empGen.minSalary = 50
     empGen.maxSalary = 100
-    println(empGen.generateEmployee())
+
+    return x
 }
