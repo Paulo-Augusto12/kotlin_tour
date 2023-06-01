@@ -1,6 +1,6 @@
 package classes.exercise_one
 
-data class Employee(val name: String, var salary: Int)
+import classes.Employee
 
 
 fun giveEmployeeASalaryBoost(employee: Employee, employeeSalaryBoost: Int) {
