@@ -1,4 +1,3 @@
-
 import functions.exercise_two.circleAreaSingleExpression
 
 import functions.exercise_one.circleArea
@@ -7,7 +6,9 @@ import functions.exercise_three.intervalInSeconds
 
 import lambda.exercise_one.urlsList
 
-fun main () {
+import lambda.exercise_two.repeatN
+
+fun main() {
 
     val printDivider = " ------------------ [  ] ------------------ "
 
@@ -22,6 +23,8 @@ fun main () {
     val functionsExerciseThree = intervalInSeconds(3, 15, 25)
 
     val lambdaExerciseOne = urlsList()
+
+//    val lambdaExerciseTwo = repeatN(5) { println("Hello :)") }
 
     divider()
 
@@ -38,6 +41,10 @@ fun main () {
     divider()
 
     println("Lambda exercise 1 -> $lambdaExerciseOne")
+
+    divider()
+
+    println("Lambda Exercise 2 -> ${repeatN(5) { println("Hello :)") } }")
 
     divider()
 }
